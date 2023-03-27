@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => getenv('DB_HOST') ?: 'localhost',
 	'username' => 'root',
-	'password' => '',
+	'password' => getenv('DB_PASSWORD') ?: '',
 	'database' => 'smart-laundry',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

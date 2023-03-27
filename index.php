@@ -312,4 +312,10 @@ switch (ENVIRONMENT)
  *
  * And away we go...
  */
+require __DIR__ . '/vendor/autoload.php';
+
+Dotenv\Dotenv::createUnsafeImmutable(__DIR__ . '/')->load();
+
 require_once BASEPATH.'core/CodeIgniter.php';
+
+
